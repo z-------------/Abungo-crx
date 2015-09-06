@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abungo</title>
+        <meta charset="utf-8" />
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+
+                background-color: #58b69b;
+                background-size: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            body.loading {
+                background-image: url(/img/throbber.svg);
+            }
+
+            #main {
+                width: 100%;
+                height: 100%;
+            }
+
+            body.loading #main {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <webview id="main" src="https://abungo.herokuapp.com"></webview>
+        <script src="window.js"></script>
+    </body>
+</html>

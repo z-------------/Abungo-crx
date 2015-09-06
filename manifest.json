@@ -1,0 +1,18 @@
+{
+    "name": "Abungo",
+    "description": "Simple anonymous chat.",
+    "version": "0.0.3",
+    "manifest_version": 2,
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "permissions": [
+        "webview"
+    ],
+    "icons": {
+      "128": "icon/icon128.png",
+      "19": "icon/icon19.png"
+    }
+}
