@@ -4,15 +4,16 @@
     "version": "0.0.3",
     "manifest_version": 2,
     "app": {
-        "background": {
-            "scripts": ["background.js"]
+        "urls": [
+            "http://abungo.herokuapp.com/",
+            "https://abungo.herokuapp.com/"
+        ],
+        "launch": {
+            "web_url": "https://abungo.herokuapp.com/"
         }
     },
-    "permissions": [
-        "webview"
-    ],
     "icons": {
-      "128": "icon/icon128.png",
-      "19": "icon/icon19.png"
+        "128": "icon/icon128.png",
+        "19": "icon/icon19.png"
     }
 }
